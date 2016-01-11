@@ -43,7 +43,7 @@ public class HelloWorld extends PApplet
 
 		// This sets the background color for the Applet.  
 		// Play around with these numbers and see what happens!
-		this.background(200, 200, 200);
+		this.background(0, 0, 0);
 		
 		// Select a map provider
 		AbstractMapProvider provider = new Google.GoogleTerrainProvider();
@@ -70,12 +70,20 @@ public class HelloWorld extends PApplet
 		// The next line zooms in and centers the map at 
 	    // 32.9 (latitude) and -117.2 (longitude)
 	    map1.zoomAndPanTo(zoomLevel, new Location(32.9f, -117.2f));
-		
+		 
+	    
 		// This line makes the map interactive
 		MapUtils.createDefaultEventDispatcher(this, map1);
 		
 		// TODO: Add code here that creates map2 
 		// Then you'll modify draw() below
+		
+		map2 = new UnfoldingMap(this, 50+375, 50, 350, 500, provider);
+		
+		//Taipei 25.0 (latitude) and  121.5 (longitude) 
+		map2.zoomAndPanTo(zoomLevel, new Location(25.0f, 121.5f));
+		
+		MapUtils.createDefaultEventDispatcher(this, map2);
 
 	}
 
@@ -84,6 +92,7 @@ public class HelloWorld extends PApplet
 		// So far we only draw map1...
 		// TODO: Add code so that both maps are displayed
 		map1.draw();
+		map2.draw();
 	}
 
 	
