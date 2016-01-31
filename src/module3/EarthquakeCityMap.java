@@ -75,12 +75,13 @@ public class EarthquakeCityMap extends PApplet {
 	    
 	    // These print statements show you (1) all of the relevant properties 
 	    // in the features, and (2) how to get one property and use it
+	    System.out.println("earthquakes num:" + earthquakes.size());
 	    if (earthquakes.size() > 0) {
 	    	PointFeature f = earthquakes.get(0);
 	    	System.out.println(f.getProperties());
 	    	Object magObj = f.getProperty("magnitude");
 	    	float mag = Float.parseFloat(magObj.toString());
-	    	// PointFeatures also have a getLocation method
+	    	// PointFeatures also have a getLocation method	   
 	    }
 	    
 	    // Here is an example of how to use Processing's color method to generate 
@@ -88,15 +89,46 @@ public class EarthquakeCityMap extends PApplet {
 	    int yellow = color(255, 255, 0);
 	    
 	    //TODO: Add code here as appropriate
+	    for(int i= 0;  i < earthquakes.size(); i++)
+	    {
+	    	PointFeature f = earthquakes.get(i);
+	    	System.out.println(f.getProperties());
+	    	Object magObj = f.getProperty("magnitude");
+	    	float mag = Float.parseFloat(magObj.toString());
+	    	
+	    	markers.add(createMarker(f, mag));	    	
+	    	Marker marker = markers.get(i);	    	
+	    	
+	    	if(mag < 4.0)//Minor earthquakes (less than magnitude 4.0) 
+	    	{
+	    		marker.setColor(color(0,0,255)); // set marker blue	    		
+	    	}else if(mag < 5.0){//Light earthquakes (between 4.0-4.9) 
+	    		marker.setColor(color(255,255,0)); // set marker yellow
+	    	}else{//Moderate and higher earthquakes (5.0 and over) 
+	    		marker.setColor(color(255,0,0)); // set marker red
+	    	}
+	    	map.addMarker(marker);
+	    }
+	    	
 	}
 		
 	// A suggested helper method that takes in an earthquake feature and 
 	// returns a SimplePointMarker for that earthquake
 	// TODO: Implement this method and call it from setUp, if it helps
-	private SimplePointMarker createMarker(PointFeature feature)
+	private SimplePointMarker createMarker(PointFeature feature, float mag)
 	{
+		SimplePointMarker marker = new SimplePointMarker(feature.getLocation());
 		// finish implementing and use this method, if it helps.
-		return new SimplePointMarker(feature.getLocation());
+		
+		if(mag < 4.0)//Minor earthquakes (less than magnitude 4.0) 
+    	{
+    		marker.setRadius(3.0f);// set marker smaller    		
+    	}else if(mag < 5.0){//Light earthquakes (between 4.0-4.9) 
+    		marker.setRadius(8.0f);// set marker medium
+    	}else{//Moderate and higher earthquakes (5.0 and over) 
+    		marker.setRadius(17.0f);// set marker bigger
+    	}
+		return marker;
 	}
 	
 	public void draw() {
@@ -111,6 +143,91 @@ public class EarthquakeCityMap extends PApplet {
 	private void addKey() 
 	{	
 		// Remember you can use Processing's graphics methods here
-	
+		/*
+		 * canvas
+		 */
+		int box_x = 20;
+		int box_y = 50;
+		int box_width = 155;
+		int box_height = 250;
+		
+		fill(240);
+		rect(box_x, box_y, box_width, box_height);
+		
+		/*
+		 * tile
+		 */	
+		String title = "Earthquake Key";
+		int title_x = box_x + 75;
+		int title_y = box_y + 20;
+		int title_size = 14;
+		fill(0);
+		textAlign(CENTER);
+		textSize(title_size);
+		text(title, title_x, title_y );  // Text wraps within text box
+		
+		/*
+		 * key1
+		 */
+		String key1 = "5.0+ Magnitude";
+		int key1_x = title_x -  20;
+		int key1_y = title_y + 40;
+		int key1_size = 12;
+		
+		fill(0);
+		textAlign(LEFT);
+		textSize(key1_size);
+		text(key1, key1_x, key1_y );  // Text wraps within text box
+		
+		float key1_icon_width = 17.0f;
+		float key1_icon_height = 17.0f;
+		int key1_icon_x = key1_x - 30;
+		int key1_icon_y = key1_y - (int)key1_icon_height/2;
+		
+		fill(255, 0, 0);
+		ellipse(key1_icon_x, key1_icon_y, key1_icon_width, key1_icon_height);
+		
+		/*
+		 * key2
+		 */
+		String key2 = "4.0+ Magnitude";
+		int key2_x = key1_x;
+		int key2_y = key1_y + 50;
+		int key2_size = 12;
+		
+		fill(0);
+		textAlign(LEFT);
+		textSize(key2_size);
+		text(key2, key2_x, key2_y );  // Text wraps within text box
+		
+		float key2_icon_width = 8.0f;
+		float key2_icon_height = 8.0f;
+		int key2_icon_x = key2_x - 30;
+		int key2_icon_y = key2_y - (int)key2_icon_height/2;
+		
+		fill(255, 255, 0);
+		ellipse(key2_icon_x, key2_icon_y, key2_icon_width, key2_icon_height);
+		
+		/*
+		 * key3
+		 */
+		String key3 = "Below 4.0";
+		int key3_x = key2_x;
+		int key3_y = key2_y + 50;
+		int key3_size = 12;
+		
+		fill(0);
+		textAlign(LEFT);
+		textSize(key3_size);
+		text(key3, key3_x, key3_y );  // Text wraps within text box
+		
+		float key3_icon_width = 3.0f;
+		float key3_icon_height = 3.0f;
+		int key3_icon_x = key3_x - 30;
+		int key3_icon_y = key3_y - (int)key3_icon_height/2;
+		
+		fill(0, 0, 255);
+		ellipse(key3_icon_x, key3_icon_y, key3_icon_width, key3_icon_height);
+		
 	}
 }
