@@ -65,11 +65,13 @@ public abstract class EarthquakeMarker extends SimplePointMarker
 		drawEarthquake(pg, x, y);
 		
 		// OPTIONAL TODO: draw X over marker if within past day		
-		
+		drawX(pg, x, y);
 		// reset to previous styling
 		pg.popStyle();
 		
 	}
+	
+	
 	
 	// determine color of marker from depth
 	// We suggest: Deep = red, intermediate = blue, shallow = yellow
@@ -77,13 +79,37 @@ public abstract class EarthquakeMarker extends SimplePointMarker
 	// You might find the getters below helpful.
 	private void colorDetermine(PGraphics pg) {
 		//TODO: Implement this method
+		float depth = getDepth();
+		if(depth < 70)
+			pg.fill(255, 255, 0);
+		else if(depth < 300)
+			pg.fill(0, 0, 255);
+		else
+			pg.fill(255, 0, 0);
+	}
+	
+	public void drawX(PGraphics pg, float x, float y) {
+		// Draw a centered circle for land quakes
+		// DO NOT set the fill color here.  That will be set in the EarthquakeMarker
+		// class to indicate the depth of the earthquake.
+		// Simply draw a centered circle.
+		
+		// HINT: Notice the radius variable in the EarthquakeMarker class
+		// and how it is set in the EarthquakeMarker constructor
+		
+		// TODO: Implement this method
+		pg.line(x-radius/2-radius/5, y-radius/2-radius/5, x+radius/2+radius/5, y+radius/2+radius/5);
+		pg.line(x+radius/2+radius/5, y-radius/2-radius/5, x-radius/2-radius/5, y+radius/2+radius/5);
+		
 	}
 	
 	
 	/*
 	 * getters for earthquake properties
 	 */
-	
+	public String getAge() {
+		return (String) getProperty("age");
+	}
 	public float getMagnitude() {
 		return Float.parseFloat(getProperty("magnitude").toString());
 	}
