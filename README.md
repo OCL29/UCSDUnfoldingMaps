@@ -44,14 +44,14 @@ write code in four different new classes: an abstract class named EarthquakeMark
 <p>This Moduel can divide 4 steps</p>
 
 <h3>step 1  Complete the method definition for the draw() method in the CityMarker class</h3>
-<img src="https://lh3.googleusercontent.com/9C_sxs10mAktdlzO1aaBW2UYaTf-Jopd1-fEdMHxOoFQ0b_6TmPB1M7CXRgAzs-PouV5h1301153rzyx4bZ19uoYKytdhG31e3GYcWXVyUfQhomSAvYrRSeeWX5aucezlEdV5xE1UG-oMUnVXLJH3Vr5NX5ivtAatTtHn63gNxTqoNxk8y4MkowQ0HjkXashWxlTNLQqKD5rW--mUsALaB_sRFhjDkxC9BlEIdY2pIwHk-j-GsCrWCGFT1IkBezo1A7keEr6tb1yrCSrc1k96i--hCipFSQglh5_t3l-Qt_0GoTwVoiyff3gW7B0bzpdq6LG09wzD5WWGa2QU5nBQ-lelsR4ZHAFD9LJTrBwWaN-ttjXa4K3k5DfQeX-GVgOOpwgcsnDssrbXkGSdnGvKkbaKAX-SxXLr_fNW4FnU6sudXjYrmXAKiL0uV_dV8bnUbfiXviKo1OtsKdwwjZmfx0qAPstnC5qfY1By6ZDzevyT-KqTL0vPbleYxmHinPHVUsRH7wJYTa6LISCprOZVMvF-r-UTNTJsmhxFK-T5pRnTsBKqM0m85L_DbLrYhUhKvFm=w899-h700-no" width="640" height="480"/>
+<img src="http://i.imgur.com/zObFslt.png" width="640" height="480"/>
 
 <h3>step 2 Complete the method definitions for the drawEarthquake() method in LandQuakeMarker and OceanQuakeMarker </h3>
-<img src="https://lh3.googleusercontent.com/moT3fC8aqwc2etENqKZQGGokezApssQxr3hmlOWNOLBoydb2BNYUh_cHQnXVlp4iImQlB28qPb6Xvp0hBKmMOpq7kr9fnfooIAsZzHpNgHFvHNUaT9S4WbdylSd2Snycx50bgyBTQgG1pICZu5LruHZ8C45PfA_5XDfo-XRSarKdukLUw6J1p1A66wxMd-yICWZFEky-QmvSyjBUMcDamDh_5ZQfy08Ri52gL29g18-uIv-reJ_82zZfuXqdOS51KFhdkXJrMW6eGIwtKW472OWEFMjKWM_qewRMgXPF_airdN61hhna3M4TrebrrAlQVdthR9MnN9cbo6jO-SSDQiVyRu4w4XsV91Awu2iJIm64aaNyOuya2c-W-znk82q3t7ESS4FTiNlDu-u2Bly7LbbNKgPEVrsnYsaCPIaDN7XflvxjZjlD9m-pmM92Sy6t7kmBASdGk3GfEW_0Nwako-0ixAa0zaL-coRaSeUohp90_uYFxRCaH4hFHiZj7iNbo1a22P_jMjvcQpsbB5byt2EGbYFLg9uZ9KRhotrNflfIPLasDnr4Xv4VORGj5zPcL4lt=w902-h699-no" width="640" height="480"/>
+<img src="http://i.imgur.com/AAwK3Wa.png" width="640" height="480"/>
 
 <h3>step 3 Complete the method definition for colorDetermine() method in EarthquakeMarker</h3>
-<img src="https://lh3.googleusercontent.com/htxN7pufBWvLjOQzJaJ5vukGaaVwJDosqf33fevHlVhcvFJ8LkD-KmsyRRd7PlkKy5l1Jv2LUg5o7D88SgabRaUHSZjRxECpZYUPdyykmNmuHEWTf6TW52yz3F1ShRCiqMqT3D2i-qzOTEgylviHvlh6dmdqEX2E5wZsq3WibwN8263fVhaUpD7c8z9EU6el9kD8gp2iU_H4DHv6_HOvdyNaJF2AETH_tDonFN6LdhaZ35tuQ0wRzFzXcfwGXyVl74ReIKp4i55ozD7nHKx6OFfvpxapHlZDaWyEuFIzCIhkQAjc7aMhhtU-R_g6yRQOi35mux15leRpgN2mcWOq_kUc8sT4bMmB7PeqqfMVemQ-QHpGIoO1qJJe9Ht3gZ1SfsL4NzcjMtbLvErqwf8HDKbFnsck7HtzjQGlOSjsB-abXdGRBCIxIwwxo007Fo0PPXjzkcVlbx24048VEuR67pylMwmM9YG39-ZFIWXCH9NhfR8eg5LUZCfG8Zzoq_U1o-7fpGKlmxDeU7EgIGZycjjqDS-VqWLfrgyNeQT27Kv77mTTAh8OrS8e4UDU1YaDKj2O=w902-h700-no" width="640" height="480"/>
+<img src="http://i.imgur.com/wASEz8n.png" width="640" height="480"/>
 
 <h3>step 4 Modify the draw method so that it draws an X over all earthquake markers </h3>
-<img src="https://lh3.googleusercontent.com/C29xg77_HEtDs_gSxViUTkIfcxEildO5bq4K2_vUrO9AzaNIaMpy857r7BxRwAWC4WopsH6G41aIBzfnW3CyHKw9BLNSHKFLUE5BwNs0PWEHjNQ9EY6lVrc82OMYYMqL1JeQ9xRoNhFpjxlU5wORk3GYeAzDLJXhFPtUAHEr9ypDlBVmaYx_dfMaxEOAbgKh6vcQEW4FlZQ2fPrEa6qnPCHzVy5hSPen1Uv31UUp02peGeZ5MaC6lJPemmwrr3fsXR_-oFq0ozFALQfyKSBH1Aa7yJ2i8-uqJFqcto7ooXgo1FpqIkVRYU5Xk80qibaHiQvFu85w4nDdKYqeTnVGLX6W95l_4S1xya3P_8XSmbn9wgh8CMvG41XKcr-BRt3dq0_nQ7ZyeCFpLb9pwcWNDwF4vC_el-GaHrBCd2SrHST93e5Obn27ZNZKz-Oq0NeytPjGXVnN6fg0qOTaWD9GfKJYwfjeTHwuLQJo9NjHGwVt0x04Yp8oeqhuMjrkIQCXOY0A-uh_4xGjp39t-TD9Ir19FUpin8ZIS4dIu30Cw9yGzc4QpmxWeffBlZM1axWLS8ao=w906-h699-no" width="640" height="480"/>
+<img src="http://i.imgur.com/N7kE2Vk.png" width="640" height="480"/>
 
