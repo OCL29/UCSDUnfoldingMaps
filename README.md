@@ -38,7 +38,7 @@ write code in four different new classes: an abstract class named EarthquakeMark
 
 <h2>before modify Moduel 4</h2>
 
-<img src="https://lh3.googleusercontent.com/oItE5-vUoIRObvrOF7SwrwZLCdxB0nD2grAgDCfXn_9TjGGgXKWPjqlMcBrLPpQ00dsvLUa2TjsvGOJ7YcKIP_WDG1xR5K-YcOxsGneggXN8_qD-7fumB-4-2dY7bNvc1vEsGfAMxf5TSbassTCwFknTvHC5ZFSC0ZFwciCcP167Ro-YOIzbsnBdReod_X_DjBVcWD7Jnn1NkO8RttEYNw3ZQ0SKcbQRONCsG7OKzfXjDaPRW6Lge1HZsC63l5ixRZGtuXOMIMdv9J40O7etiZmcNHRQitDDrST9rtZKBqFvSUlyNBxF0dTdSDB9CQeix_qyVLQT3WcIA-YFi_1jzdpgLTm3-XCFVOO6ou4kX0f63gb0tylQRh5DTqVzci1KK5vNMUs4-VP-K3c93kMDl5XsBC_X6cpCuVa7ulG9310pSK9jo-4CwMF3IMgsdELn3Dh1Wjvr_Wxe3fJKJ3SdFAOCIKiYRpqEx0Mjskb-GwPKCQkPV38qsumXqhYze3MwEosTqHAfEp1jcNMrjixmIfdfqIG8TkhMkNFTNmTwungQV5vSagVUhcmaASOlolvqAZYL=w902-h697-no" width="640" height="480"/>
+<img src="http://i.imgur.com/8BUAuhC.png" width="640" height="480"/>
 
 <h2>after modify Moduel 4</h2>
 <p>This Moduel can divide 4 steps</p>
